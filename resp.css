@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* background: radial-gradient(#fff,#ffd6d6); */
+}
+
+#fret{
+    min-height: 100vh;
+    background: radial-gradient(#fff,#ffd6d6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background: #ffd6d6;
+    border-radius: 12px;
+    box-shadow: -3px 3px 10px -5px rgba(0, 0, 0, 0.2);
+    padding: 30px 30px;
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-form{
+    flex: 1;
+}
+
+.contact-form h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: -3px 3px 10px -5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+
+.text-box::placeholder{
+    color: black;
+}
+.contact-form textarea{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: -3px 3px 10px -5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.contact-form textarea::placeholder{
+    color: black;
+}
+
+.contact-form .send-btn{
+    float: right;
+    background: #006692;
+    color: #f2f3f7;
+    border: none;
+    width: 120px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* transition: 0.3s;
+    transition-property: background; */
+}
+
+@media screen and (max-width: 950) {
+    .contact-form{
+        flex-direction: column;
+        margin: 30px 50px;
+    }
+
+    .contact-form h2{
+        font-size: 50px;
+    }
+
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
